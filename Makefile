@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: arouzen <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: arouzen <arouzen@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/27 14:16:42 by arouzen           #+#    #+#              #
-#    Updated: 2021/12/29 21:04:15 by arouzen          ###   ########.fr        #
+#    Updated: 2022/12/19 16:42:18 by arouzen          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,9 +15,9 @@
 NAME = libftprintf.a
 INCL = ft_printf.h
 INCL_B = ft_printf_bonus.h
-MAND_SRCS = ft_putnbr_base.c ft_putchar_fd.c ft_putstr_fd.c ft_printf.c
+MAND_SRCS = ft_putnbr_base.c utils.c ft_printf.c
 MAND_OBJS = $(MAND_SRCS:.c=.o)
-BONU_SRCS = ft_putnbr_base.c ft_putchar_fd.c ft_putstr_fd.c ft_printf_bonus.c
+BONU_SRCS = ft_putnbr_base.c utils.c ft_printf_bonus.c
 BONU_OBJS = $(BONU_SRCS:.c=.o)
 AR = ar
 ARFLAGS = -rs
